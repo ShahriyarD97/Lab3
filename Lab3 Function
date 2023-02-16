@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+# A function that will write a text file to your PC with your name
+
+filename = input("Enter the file name: ")
+text = input("Enter the text to write to the file: ")
+
+with open(filename, "w") as f:
+    f.write(text)
+
+print(f"File '{filename}' has been created with the inputted text.")
